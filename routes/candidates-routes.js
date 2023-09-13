@@ -8,6 +8,14 @@ router.get('/candidatos', async (req, res) => {
   res.json(results)
 });
 
+// rota para listar 1 candidato especifico com base no id
+router.get('/candidatos/:id', async (req, res) => {
+  const id = parseInt(req.params.id);
+  const results = await db.getProductById(id)
+  res.json(results)
+});
+
+
 // rota de cadastro de 1 novo candidato
 router.post('/candidato', async (req, res) => {
   const candidato = req.body;
