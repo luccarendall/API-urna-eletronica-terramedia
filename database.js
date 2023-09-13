@@ -9,14 +9,17 @@ const getCandidatos = async () => {
 }
 
 // função para selecionar 1 candidato pelo id
-const getProductById = async (id) => {
-  const results = await client.query("SELECT * FROM candidatos WHERE id=?;", [id])
-  return results[0];
-}
+// const getCandidatoById = async (id) => {
+//   const results = await client.query("SELECT * FROM candidatos WHERE id=?;", [id])
+//   return results[0];
+// }
+// A busca por id estava sobrepondo e quebrando a consulta por número
 
-// função para selecionar 1 candidato pelo número
-const getProductByNumber = async (numero) => {
+// função para selecionar candidatos pelo número
+const getCandidatosByNumber = async (numero) => {
+  console.log("Consultando candidatos com número:", numero);
   const results = await client.query("SELECT * FROM candidatos WHERE numero=?;", [numero])
+  console.log("Resultados da consulta:", results);
   return results[0];
 }
 
@@ -42,8 +45,8 @@ const postCandidatos = async (candidatos) => {
 
 module.exports = {
   getCandidatos,
-  getProductById,
-  getProductByNumber,
+  // getCandidatoById,
+  getCandidatosByNumber,
   postCandidato,
   postCandidatos,
 }
