@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "numero": 50,
+    "nome": "Aragorn",
+    "partido": "Partido dos Homens",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 2,
+    "numero": 50,
+    "nome": "Boromir",
+    "partido": "Partido dos Homens",
+    "cargo": "Governador"
+  },
+  {
+    "id": 3,
+    "numero": 50,
+    "nome": "Faramir",
+    "partido": "Partido dos Homens",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 4,
+    "numero": 501,
+    "nome": "Denethor",
+    "partido": "Partido dos Homens",
+    "cargo": "Senador"
+  },
+  {
+    "id": 5,
+    "numero": 5011,
+    "nome": "Theoden",
+    "partido": "Partido dos Homens",
+    "cargo": "Deputado Federal"
+  },
+  {
+    "id": 6,
+    "numero": 50121,
+    "nome": "Eomer",
+    "partido": "Partido dos Homens",
+    "cargo": "Deputado Estadual"
+  },
+  {
+    "id": 7,
+    "numero": 50131,
+    "nome": "Eowyn",
+    "partido": "Partido dos Homens",
+    "cargo": "Vereador"
+  },
+  {
+    "id": 8,
+    "numero": 60,
+    "nome": "Frodo Bolseiro",
+    "partido": "Partido do Condado",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 9,
+    "numero": 60,
+    "nome": "Samwise Gamgee",
+    "partido": "Partido do Condado",
+    "cargo": "Governador"
+  },
+  {
+    "id": 10,
+    "numero": 60,
+    "nome": "Merry Brandybuck",
+    "partido": "Partido do Condado",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 11,
+    "numero": 601,
+    "nome": "Pippin Took",
+    "partido": "Partido do Condado",
+    "cargo": "Senador"
+  },
+  {
+    "id": 12,
+    "numero": 6011,
+    "nome": "Bilbo Bolseiro",
+    "partido": "Partido do Condado",
+    "cargo": "Deputado Federal"
+  },
+  {
+    "id": 13,
+    "numero": 70,
+    "nome": "Gandalf, o Cinzento",
+    "partido": "Partido dos Magos Maiar",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 14,
+    "numero": 70,
+    "nome": "Saruman, o Branco",
+    "partido": "Partido dos Magos Maiar",
+    "cargo": "Governador"
+  },
+  {
+    "id": 15,
+    "numero": 70,
+    "nome": "Radagast, o Castanho",
+    "partido": "Partido dos Magos Maiar",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 16,
+    "numero": 7011,
+    "nome": "Allatar e Pallando, os Azuis",
+    "partido": "Partido dos Magos Maiar",
+    "cargo": "Deputado Federal"
+  },
+  {
+    "id": 17,
+    "numero": 80,
+    "nome": "Thorin Escudo-de-Carvalho",
+    "partido": "Partido dos Anões",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 18,
+    "numero": 80,
+    "nome": "Gimli",
+    "partido": "Partido dos Anões",
+    "cargo": "Governador"
+  },
+  {
+    "id": 19,
+    "numero": 80,
+    "nome": "Ori",
+    "partido": "Partido dos Anões",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 20,
+    "numero": 801,
+    "nome": "Balin",
+    "partido": "Partido dos Anões",
+    "cargo": "Senador"
+  },
+  {
+    "id": 21,
+    "numero": 8011,
+    "nome": "Dwalin",
+    "partido": "Partido dos Anões",
+    "cargo": "Deputado Federal"
+  },
+  {
+    "id": 22,
+    "numero": 80121,
+    "nome": "Kili",
+    "partido": "Partido dos Anões",
+    "cargo": "Deputado Estadual"
+  },
+  {
+    "id": 23,
+    "numero": 80131,
+    "nome": "Fili",
+    "partido": "Partido dos Anões",
+    "cargo": "Vereador"
+  },
+  {
+    "id": 24,
+    "numero": 90,
+    "nome": "Legolas",
+    "partido": "Partido Élfico",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 25,
+    "numero": 90,
+    "nome": "Galadriel",
+    "partido": "Partido Élfico",
+    "cargo": "Governador"
+  },
+  {
+    "id": 26,
+    "numero": 90,
+    "nome": "Thranduil",
+    "partido": "Partido Élfico",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 27,
+    "numero": 901,
+    "nome": "Celeborn",
+    "partido": "Partido Élfico",
+    "cargo": "Senador"
+  },
+  {
+    "id": 28,
+    "numero": 9011,
+    "nome": "Arwen",
+    "partido": "Partido Élfico",
+    "cargo": "Deputado Federal"
+  },
+  {
+    "id": 29,
+    "numero": 20,
+    "nome": "Morgoth",
+    "partido": "Partido de Mordor",
+    "cargo": "Presidente"
+  },
+  {
+    "id": 30,
+    "numero": 20,
+    "nome": "Sauron",
+    "partido": "Partido de Mordor",
+    "cargo": "Governador"
+  },
+  {
+    "id": 31,
+    "numero": 20,
+    "nome": "Gothmog, Senhor dos Balrogs",
+    "partido": "Partido de Mordor",
+    "cargo": "Prefeito"
+  },
+  {
+    "id": 32,
+    "numero": 201,
+    "nome": "Azog, o Profano",
+    "partido": "Partido de Mordor",
+    "cargo": "Senador"
+  },
+  {
+    "id": 33,
+    "numero": 2011,
+    "nome": "Chapa Nazgûl",
+    "partido": "Partido de Mordor",
+    "cargo": "Deputado Federal"
+  }
+]
