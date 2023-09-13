@@ -8,6 +8,13 @@ const getCandidatos = async () => {
   return result[0];
 }
 
+// função para criar um novo candidato
+const postCandidato = async (candidato) => {
+  newCandidatoInfo = [candidato.id, candidato.numero, candidato.nome, candidato.partido, candidato.cargo]
+  await client.query("INSERT INTO candidatos(id,numero,nome,partido,cargo) VALUES (?,?,?,?,?)", newCandidatoInfo)
+}
+
 module.exports = {
   getCandidatos,
+  postCandidato,
 }
