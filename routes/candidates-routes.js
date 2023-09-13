@@ -36,4 +36,13 @@ router.post('/candidatos', async (req, res) => {
   res.sendStatus(201);
 });
 
+// rota para atualizar produto
+router.patch('/candidatos/:numero', async (req, res) => {
+  const numero = parseInt(req.params.numero);
+  const candidato = req.body;
+
+  await db.updateCandidato(numero, candidato)
+  res.sendStatus(200);
+  });
+
 module.exports = router;

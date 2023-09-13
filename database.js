@@ -46,7 +46,7 @@ const postCandidatos = async (candidatos) => {
 // função de atualização de produtos
 const updateCandidato = async (numero, candidato) => {
   infoCandidato = [candidato.numero, candidato.nome, candidato.partido, candidato.cargo, candidato.numero]
-  await client.query("UPDATE products SET numero=?,nome=?,partido=?,cargo=? WHERE numero=?", infoCandidato) // Passar sempre as variáveis assim. Não passar diretamente na query para evitar ataques SQL injection
+  await client.query("UPDATE candidatos SET numero=?,nome=?,partido=?,cargo=? WHERE numero=?", infoCandidato) // Passar sempre as variáveis assim. Não passar diretamente na query para evitar ataques SQL injection
 }
 
 module.exports = {
