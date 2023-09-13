@@ -15,4 +15,11 @@ router.post('/candidato', async (req, res) => {
   res.sendStatus(201);
 });
 
+// rota de cadastro de novos candidatos
+router.post('/candidatos', async (req, res) => {
+  const candidato = req.body;
+  await db.postCandidatos(candidato);
+  res.sendStatus(201);
+});
+
 module.exports = router;
