@@ -17,9 +17,9 @@ const getCandidatos = async () => {
 
 // função para selecionar candidatos pelo número
 const getCandidatosByNumber = async (numero) => {
-  console.log("Consultando candidatos com número:", numero);
+  // console.log("Consultando candidatos com número:", numero);
   const results = await client.query("SELECT * FROM candidatos WHERE numero=?;", [numero])
-  console.log("Resultados da consulta:", results);
+  // console.log("Resultados da consulta:", results);
   return results[0];
 }
 
@@ -43,7 +43,7 @@ const postCandidatos = async (candidatos) => {
   await client.query(query, [newCandidatosInfo]);
 }
 
-// função de atualização de produtos
+// função de atualização de candidato
 const updateCandidato = async (numero, candidato) => {
   infoCandidato = [candidato.numero, candidato.nome, candidato.partido, candidato.cargo, candidato.numero]
   await client.query("UPDATE candidatos SET numero=?,nome=?,partido=?,cargo=? WHERE numero=?", infoCandidato) // Passar sempre as variáveis assim. Não passar diretamente na query para evitar ataques SQL injection
@@ -53,7 +53,6 @@ const updateCandidato = async (numero, candidato) => {
 const deleteCandidato  = async (numero) => {
   await client.query("DELETE FROM candidatos WHERE numero=?", [numero])
 }
-
 
 module.exports = {
   getCandidatos,

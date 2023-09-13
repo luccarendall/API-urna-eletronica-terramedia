@@ -36,7 +36,7 @@ router.post('/candidatos', async (req, res) => {
   res.sendStatus(201);
 });
 
-// rota para atualizar produto
+// rota para atualizar candidato
 router.patch('/candidatos/:numero', async (req, res) => {
   const numero = parseInt(req.params.numero);
   const candidato = req.body;
@@ -44,5 +44,12 @@ router.patch('/candidatos/:numero', async (req, res) => {
   await db.updateCandidato(numero, candidato)
   res.sendStatus(200);
   });
+
+// rota para excluir 1 candidato pelo número
+router.delete('/candidatos/:numero', async (req, res) => {
+  const numero = parseInt(req.params.numero);
+  await db.deleteCandidato(numero);
+  res.sendStatus(204);
+});
 
 module.exports = router;
