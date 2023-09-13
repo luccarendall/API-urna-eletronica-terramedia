@@ -1,6 +1,8 @@
+![terra-media](./utils//CRUD-Urna-eletronica.svg)
+
 # API de Gerenciamento de Candidatos
 
-Esta é uma API CRUD em Node.js que permite o gerenciamento de candidatos em um banco de dados MySQL.  
+Esta é uma API CRUD em Node.js que permite o gerenciamento de candidatos em um banco de dados MySQL.
 
 ## Rotas
 
