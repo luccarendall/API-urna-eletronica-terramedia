@@ -8,6 +8,12 @@ const getCandidatos = async () => {
   return result[0];
 }
 
+// função para selecionar 1 candidato pelo número
+const getProductByNumber = async (numero) => {
+  const results = await client.query("SELECT * FROM candidatos WHERE numero=?;", [numero])
+  return results[0];
+}
+
 // função para criar um novo candidato
 const postCandidato = async (candidato) => {
   newCandidatoInfo = [candidato.id, candidato.numero, candidato.nome, candidato.partido, candidato.cargo]
@@ -30,6 +36,7 @@ const postCandidatos = async (candidatos) => {
 
 module.exports = {
   getCandidatos,
+  getProductByNumber,
   postCandidato,
   postCandidatos,
 }
