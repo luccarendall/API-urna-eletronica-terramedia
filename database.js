@@ -14,7 +14,22 @@ const postCandidato = async (candidato) => {
   await client.query("INSERT INTO candidatos(id,numero,nome,partido,cargo) VALUES (?,?,?,?,?)", newCandidatoInfo)
 }
 
+// função para adicionar vários candidatos ao mesmo tempo
+const postCandidatos = async (candidatos) => {
+  const newCandidatosInfo = candidatos.map((candidato) => [
+    candidato.id,
+    candidato.numero,
+    candidato.nome,
+    candidato.partido,
+    candidato.cargo
+  ]);
+
+  const query = "INSERT INTO candidatos(id, numero, nome, partido, cargo) VALUES ?";
+  await client.query(query, [newCandidatosInfo]);
+}
+
 module.exports = {
   getCandidatos,
   postCandidato,
+  postCandidatos,
 }
