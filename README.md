@@ -73,9 +73,5 @@ Antes de começar a usar a API, siga estas etapas de configuração:
 
 Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos. Basta fazer um fork deste repositório, criar uma nova branch, fazer suas alterações e enviar um pull request.
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter detalhes.
-
 ---
 Aproveite o uso da API de Gerenciamento de Candidatos! Se tiver alguma dúvida ou problema, sinta-se à vontade para entrar em contato.
